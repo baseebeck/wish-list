@@ -1,0 +1,269 @@
+html {
+  background-color: #f1faee;
+  background-image: url("/images/brick-wall.png");
+  /* background-image: url("/images/brick-wall.png"), -webkit-linear-gradient(90deg, #1d3557 10%, #f1faee 20%); */
+  /* min-height: 1000px; */
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+h2 {
+  color: #1d3557;
+  font-size: 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  /* padding-bottom: 3rem; */
+}
+
+.list-name-container {
+  background-color: #1d3557;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.item {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+.item-text {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.add-item {
+  background: #f1faee;
+  /* background: rgba(0, 0, 0, 0.05); */
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+  border-radius: 0px 0px 5px 5px;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #e63946;
+}
+
+input[type="checkbox"] {
+  margin: 5px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #1d3557;
+}
+
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  margin-right: 20px;
+  min-height: 50px;
+  min-width: 50px;
+  /* width: 50px; */
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #e63946;
+  color: #fff;
+  font-size: 2rem;
+  border-width: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #AC2B35;
+}
+
+button:active {
+  cursor: pointer;
+  background-color: #AC2B35;
+}
+
+input[type="text"] {
+  text-align: left;
+  margin-left: 60px;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 200;
+  width: 700px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-bottom: 4px solid #1d3557;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+.footer {
+  color: #1d3557;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.nav-link a {
+  color: #1d3557;
+}
+
+.nav-link a:hover {
+  color: #e63946;
+}
+
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 98%;
+  }
+
+  .item-text {
+    font-size: 1rem;
+  }
+
+  input[type="text"] {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .form-container {
+    width: 98%;
+  }
+
+  .item-text {
+    font-size: 0.9rem;
+  }
+
+  input[type="text"] {
+    font-size: 0.9rem;
+  }
+
+}
+
+/* Home Page Styles */
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.links-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 1rem;
+  padding: 10px 50px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .links-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links-wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+
+.card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  max-height: 400px;
+  padding: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover .card-p {
+  color: #e63946;
+}
+
+.card-p {
+  padding: 0;
+  font-weight: 400;
+  text-decoration: none;
+}
